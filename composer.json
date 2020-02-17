@@ -1,0 +1,36 @@
+{
+    "name": "karmendra/laravel-agent-detector",
+    "description": "Laravel wrapper for matomo-org/device-detector user agent parser",
+    "keywords": ["laravel", "useragent", "agent", "user agent", "browser", "platform", "mobile", "desktop", "device-detector"],
+    "homepage": "https://github.com/karmendra/laravel-agent-detector",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Karmendra Suthar",
+            "email": "karmendra.js@gmail.com"
+        }
+    ],
+    "require": {
+        "piwik/device-detector": "^3.12"
+    },
+	"require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Karmendra\\LaravelAgentDetector\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karmendra\\LaravelAgentDetector\\AgentDetectorServiceProvider"
+            ],
+            "aliases": {
+                "Agent": "Karmendra\\LaravelAgentDetector\\Facades\\AgentDetector"
+            }
+        }
+    },
+    "suggest": {
+        "illuminate/support": "Required for laravel service providers"
+    }
+}
