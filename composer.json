@@ -26,7 +26,7 @@
                 "Karmendra\\LaravelAgentDetector\\AgentDetectorServiceProvider"
             ],
             "aliases": {
-                "Agent": "Karmendra\\LaravelAgentDetector\\Facades\\AgentDetector"
+                "AgentDetector": "Karmendra\\LaravelAgentDetector\\Facades\\AgentDetector"
             }
         }
     },
