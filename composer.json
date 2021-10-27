@@ -11,9 +11,9 @@
         }
     ],
     "require": {
-        "piwik/device-detector": "^3.12"
+        "matomo/device-detector": "^4.3"
     },
-	"require-dev": {
+    "require-dev": {
     },
     "autoload": {
         "psr-4": {
