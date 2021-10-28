@@ -19,7 +19,7 @@ class AgentDetectorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('agent_detector', function ($app) {
-            return new AgentDetector($app['request']->server());
+            return new AgentDetector($app['request']->userAgent());
         });
 
         $this->app->alias('agent_detector', AgentDetector::class);
