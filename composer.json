@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "matomo/device-detector": "^4.3"
+        "matomo/device-detector": "^6.1"
     },
     "require-dev": {
     },
